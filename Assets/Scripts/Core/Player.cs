@@ -12,9 +12,8 @@ namespace TrashFrenzy.Core.Player
         [SerializeField] private float dashForce = 24f;
         
         
-
         [Header("Components")]
-        [SerializeField] private InputActionAsset inputActions;
+        [SerializeField] private InputActionAsset inputActionAsset;
         [SerializeField] private Rigidbody2D rb2d;
     }
 }

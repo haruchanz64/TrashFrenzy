@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fyrefly_Interactive_-_WB_0: 6279925783393102825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

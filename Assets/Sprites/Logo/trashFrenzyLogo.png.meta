@@ -239,7 +239,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trashFrenzyLogo_0: 5146418473327409065
+      trashFrenzyLogo_1: 485653608434458677
+      trashFrenzyLogo_2: -3621904127731938040
+      trashFrenzyLogo_3: -1024253615586860596
+      trashFrenzyLogo_4: -3787693800225691582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
