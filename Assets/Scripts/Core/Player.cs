@@ -15,5 +15,49 @@ namespace TrashFrenzy.Core.Player
         [Header("Components")]
         [SerializeField] private InputActionAsset inputActionAsset;
         [SerializeField] private Rigidbody2D rb2d;
+
+        private void Awake()
+        {
+            InitializeComponentsOnAwake();
+        }
+
+        private void Update()
+        {
+            MovePlayer();
+            HandleCombat();
+        }
+
+        private void LateUpdate()
+        {
+            HandleDash();
+            HandleWeaponSwitch();
+        }
+
+        private void InitializeComponentsOnAwake()
+        {
+            rb2d = GetComponent<Rigidbody2D>();
+            inputActionAsset = GetComponent<InputActionAsset>();
+        }
+
+        private void MovePlayer()
+        {
+            Vector2 movementInput = inputActionAsset.FindAction("Move").ReadValue<Vector2>();
+            rb2d.velocity = movementInput * movementSpeed;
+        }
+
+        private void HandleCombat()
+        {
+
+        }
+
+        private void HandleDash()
+        {
+
+        }
+
+        private void HandleWeaponSwitch()
+        {
+
+        }
     }
 }
