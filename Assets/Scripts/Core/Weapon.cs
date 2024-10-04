@@ -20,5 +20,11 @@ namespace TrashFrenzy.Core
         {
             
         }
+
+        private void EnableWeaponSwitch()
+        {
+            canSwitchWeapon = true;
+        }
+
     }
 }
