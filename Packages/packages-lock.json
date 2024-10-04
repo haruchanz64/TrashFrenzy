@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.tarodev.autosave": {
+      "version": "https://github.com/Matthew-J-Spencer/Tarodev.git?path=Assets/Plugins/AutoSave",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "5026d04051a17eb186661fd5d311c0eb7fe98dde"
+    },
     "com.unity.2d.animation": {
       "version": "10.1.1",
       "depth": 1,
