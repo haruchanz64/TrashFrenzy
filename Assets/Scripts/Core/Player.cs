@@ -10,14 +10,16 @@ namespace TrashFrenzy.Core
         [Header("Movement")]
         [SerializeField] private float movementSpeed = 12f;
         [SerializeField] private float dashForce = 24f;
-        
-        
-        [Header("Components")]
+
+
+        [Header("Input Actions")]
         [SerializeField] private InputActionReference movementInput;
         [SerializeField] private InputActionReference dashInput;
         [SerializeField] private InputActionReference combatInput;
         [SerializeField] private InputActionReference weaponSwitchInput;
 
+        [Header("COmponents")]
+        [SerializeField] private Rigidbody2D rigidbody2D;
         private void Awake()
         {
 
@@ -26,13 +28,29 @@ namespace TrashFrenzy.Core
         public void MovePlayer(InputAction.CallbackContext context)
         {
             Vector2 movementInput = context.ReadValue<Vector2>();
-            GetComponent<Rigidbody2D>().velocity = movementInput * movementSpeed;
+            rigidbody2D.velocity = movementInput * movementSpeed * Time.deltaTime;
         }
 
         public void ConsumeTrash(InputAction.CallbackContext context)
         {
-            // TODO: Implement trash consumption
-            Debug.Log("Trash Consumed");
+
+        }
+
+        public void HandleDash(InputAction.CallbackContext context)
+        {
+            if(context.performed)
+            {
+                rigidbody2D.AddForce(rigidbody2D.velocity.normalized * dashForce, ForceMode2D.Impulse);
+            }
+        }
+
+        public void SwitchWeapon(InputAction.CallbackContext context)
+        {
+            if(context.performed)
+            {
+                Weapon weapon = GetComponent<Weapon>();
+                weapon.GetCurrentWeapon();
+            }
         }
     }
 }
