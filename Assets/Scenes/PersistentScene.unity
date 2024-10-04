@@ -212,22 +212,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3178513166482505063, guid: 6181d71e200bc6e4986d393adf0042f2, type: 3}
-      propertyPath: dashInput
-      value: 
-      objectReference: {fileID: -6359009147647481696, guid: d25accab9a1b26d48b5f723eb3a25cc5, type: 3}
-    - target: {fileID: 3178513166482505063, guid: 6181d71e200bc6e4986d393adf0042f2, type: 3}
-      propertyPath: combatInput
-      value: 
-      objectReference: {fileID: 4722538986064202173, guid: d25accab9a1b26d48b5f723eb3a25cc5, type: 3}
-    - target: {fileID: 3178513166482505063, guid: 6181d71e200bc6e4986d393adf0042f2, type: 3}
-      propertyPath: movementInput
-      value: 
-      objectReference: {fileID: 7793353582779639709, guid: d25accab9a1b26d48b5f723eb3a25cc5, type: 3}
-    - target: {fileID: 3178513166482505063, guid: 6181d71e200bc6e4986d393adf0042f2, type: 3}
-      propertyPath: weaponSwitchInput
-      value: 
-      objectReference: {fileID: 1640596435794646261, guid: d25accab9a1b26d48b5f723eb3a25cc5, type: 3}
+    - target: {fileID: 2794666724159119756, guid: 6181d71e200bc6e4986d393adf0042f2, type: 3}
+      propertyPath: weapons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6305205610576673987, guid: 6181d71e200bc6e4986d393adf0042f2, type: 3}
       propertyPath: m_Name
       value: Player
