@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
-namespace TrashFrenzy.Core.Player
+using TrashFrenzy.Core;
+namespace TrashFrenzy.Core
 {
     public class Player : MonoBehaviour
     {
@@ -13,51 +13,26 @@ namespace TrashFrenzy.Core.Player
         
         
         [Header("Components")]
-        [SerializeField] private InputActionAsset inputActionAsset;
-        [SerializeField] private Rigidbody2D rb2d;
+        [SerializeField] private InputActionReference movementInput;
+        [SerializeField] private InputActionReference dashInput;
+        [SerializeField] private InputActionReference combatInput;
+        [SerializeField] private InputActionReference weaponSwitchInput;
 
         private void Awake()
         {
-            InitializeComponentsOnAwake();
-        }
-
-        private void Update()
-        {
-            MovePlayer();
-            HandleCombat();
-        }
-
-        private void LateUpdate()
-        {
-            HandleDash();
-            HandleWeaponSwitch();
-        }
-
-        private void InitializeComponentsOnAwake()
-        {
-            rb2d = GetComponent<Rigidbody2D>();
-            inputActionAsset = GetComponent<InputActionAsset>();
-        }
-
-        private void MovePlayer()
-        {
-            Vector2 movementInput = inputActionAsset.FindAction("Move").ReadValue<Vector2>();
-            rb2d.velocity = movementInput * movementSpeed;
-        }
-
-        private void HandleCombat()
-        {
 
         }
 
-        private void HandleDash()
+        public void MovePlayer(InputAction.CallbackContext context)
         {
-
+            Vector2 movementInput = context.ReadValue<Vector2>();
+            GetComponent<Rigidbody2D>().velocity = movementInput * movementSpeed;
         }
 
-        private void HandleWeaponSwitch()
+        public void ConsumeTrash(InputAction.CallbackContext context)
         {
-
+            // TODO: Implement trash consumption
+            Debug.Log("Trash Consumed");
         }
     }
 }

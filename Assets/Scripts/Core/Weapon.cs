@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-namespace TrashFrenzy.Core.Weapon
+namespace TrashFrenzy.Core
 {
     public class Weapon : MonoBehaviour
     {
@@ -11,8 +11,14 @@ namespace TrashFrenzy.Core.Weapon
 
         [Header("Weapon System")]
         [SerializeField] private float weaponSwitchDelay = 0.5f;
-
+        [SerializeField] private bool canSwitchWeapon = true;
+        [SerializeField] private int currentWeaponIndex = 0;
         [Header("Components")]
         [SerializeField] private InputActionAsset inputActionAsset;
+
+        public void GetCurrentWeapon()
+        {
+            
+        }
     }
 }
