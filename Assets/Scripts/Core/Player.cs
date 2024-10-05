@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TrashFrenzy.Manager;
+using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using TrashFrenzy.Core;
+
 namespace TrashFrenzy.Core
 {
     public class Player : MonoBehaviour
@@ -10,47 +12,67 @@ namespace TrashFrenzy.Core
         [Header("Movement")]
         [SerializeField] private float movementSpeed = 12f;
         [SerializeField] private float dashForce = 24f;
+        [SerializeField] private float dashDuration = 0.2f;
+        [SerializeField] private float dashCooldown = 1f;
 
-
-        [Header("Input Actions")]
-        [SerializeField] private InputActionReference movementInput;
-        [SerializeField] private InputActionReference dashInput;
-        [SerializeField] private InputActionReference combatInput;
-        [SerializeField] private InputActionReference weaponSwitchInput;
-
-        [Header("COmponents")]
+        [Header("Components")]
         [SerializeField] private Rigidbody2D rigidbody2D;
-        private void Awake()
+        [SerializeField] private GameManager gameManager;
+        private Vector2 movement;
+        private bool isDashing;
+        private float lastDashTime;
+
+        [Header("Trash Consuming Mechanic")]
+        [SerializeField] private int trashCounter;
+
+        private void FixedUpdate()
         {
-
-        }
-
-        public void MovePlayer(InputAction.CallbackContext context)
-        {
-            Vector2 movementInput = context.ReadValue<Vector2>();
-            rigidbody2D.velocity = movementInput * movementSpeed * Time.deltaTime;
-        }
-
-        public void ConsumeTrash(InputAction.CallbackContext context)
-        {
-
-        }
-
-        public void HandleDash(InputAction.CallbackContext context)
-        {
-            if(context.performed)
+            if (!isDashing)
             {
-                rigidbody2D.AddForce(rigidbody2D.velocity.normalized * dashForce, ForceMode2D.Impulse);
+                MoveCharacter();
             }
         }
 
-        public void SwitchWeapon(InputAction.CallbackContext context)
+        private void MoveCharacter()
         {
-            if(context.performed)
+            Vector2 moveVelocity = movement.normalized * movementSpeed;
+            rigidbody2D.velocity = new Vector2(moveVelocity.x, moveVelocity.y);
+        }
+
+        private void MovePlayer(InputAction.CallbackContext context)
+        {
+            movement = context.ReadValue<Vector2>();
+        }
+
+        private void StopMovement(InputAction.CallbackContext context)
+        {
+            movement = Vector2.zero;
+        }
+
+        private void HandleDash(InputAction.CallbackContext context)
+        {
+            if (context.performed && Time.time >= lastDashTime + dashCooldown && !isDashing)
             {
-                Weapon weapon = GetComponent<Weapon>();
-                weapon.GetCurrentWeapon();
+                StartCoroutine(Dash());
             }
+        }
+
+        private IEnumerator Dash()
+        {
+            isDashing = true;
+            lastDashTime = Time.time;
+
+            Vector2 dashDirection = rigidbody2D.velocity.normalized;
+            rigidbody2D.velocity = dashDirection * dashForce;
+
+            yield return new WaitForSeconds(dashDuration);
+
+            isDashing = false;
+        }
+
+        private void HandleSizeGrow()
+        {
+
         }
     }
 }
