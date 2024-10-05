@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3178513166482505063}
   - component: {fileID: 6852848319391306772}
   - component: {fileID: 2794666724159119756}
+  - component: {fileID: 8838777172555912675}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -174,7 +175,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3178513166482505063}
         m_TargetAssemblyTypeName: TrashFrenzy.Core.Player, Assembly-CSharp
-        m_MethodName: HandleDash
+        m_MethodName: SwitchWeapon
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -187,11 +188,35 @@ MonoBehaviour:
     m_ActionId: 65890384-33cb-445e-9642-5d28b4ea51b5
     m_ActionName: Gameplay/Weapon Swap
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3178513166482505063}
+        m_TargetAssemblyTypeName: TrashFrenzy.Core.Player, Assembly-CSharp
+        m_MethodName: HandleDash
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 76446463-d3da-4886-b9b3-a4e854541b36
     m_ActionName: Gameplay/Dash
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3178513166482505063}
+        m_TargetAssemblyTypeName: TrashFrenzy.Core.Player, Assembly-CSharp
+        m_MethodName: ConsumeTrash
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: a11017a4-857d-4a9e-aa7a-1f2ed0409a3f
     m_ActionName: Gameplay/Consume
   m_NeverAutoSwitchControlSchemes: 0
@@ -211,13 +236,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78727eaba8933c4991ebbea9095f73c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapons: []
+  weapons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   currentWeapon: {fileID: 0}
   weaponHolder: {fileID: 0}
   weaponSwitchDelay: 0.5
   canSwitchWeapon: 1
   currentWeaponIndex: 0
   inputActionAsset: {fileID: 0}
+--- !u!114 &8838777172555912675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6305205610576673987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6fa220e4ddd664b9ab99c35f696cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBarImage: {fileID: 0}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
 --- !u!1 &6890288062622051375
 GameObject:
   m_ObjectHideFlags: 0
