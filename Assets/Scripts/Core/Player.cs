@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TrashFrenzy.Manager;
-using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
