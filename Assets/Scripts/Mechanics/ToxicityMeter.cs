@@ -51,7 +51,11 @@ namespace TrashFrenzy.Mechanics
         {
             while (currentToxicity >= maxToxicity)
             {
-                float scaledDamage = toxicMeterDamage * currentToxicity;
+                float healthPercentage = health.CurrentHealth / health.MaxHealth;
+                float damageMultiplier = 1.0f + (1.0f - healthPercentage) * 2.0f;
+                float scaledDamage = toxicMeterDamage * currentToxicity * damageMultiplier;
+
+                Debug.Log($"Health Percentage: {healthPercentage:P0} || Damage Multiplier: {damageMultiplier:0.0} || Scaled Damage: {scaledDamage:0.0}");
 
                 health.ApplyDamage(scaledDamage);
 
