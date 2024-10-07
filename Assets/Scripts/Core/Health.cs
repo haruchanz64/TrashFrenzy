@@ -12,6 +12,22 @@ namespace TrashFrenzy.Core
         [SerializeField] private float maxHealth = 100f;
         [SerializeField] private float currentHealth;
 
+        public float CurrentHealth
+        {
+            get
+            {
+                return currentHealth;
+            }
+        }
+
+        public float MaxHealth
+        {
+            get
+            {
+                return maxHealth;
+            }
+        }
+
         [Header("Health - UI")]
         [SerializeField] private Image healthBarImage;
         [SerializeField] private Gradient gradient;
@@ -35,6 +51,7 @@ namespace TrashFrenzy.Core
         {
             currentHealth -= damage;
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
         }
 
         public void Heal(float healAmount)
@@ -43,6 +60,13 @@ namespace TrashFrenzy.Core
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         }
 
-        
+
+        private void CheckIfPlayerDead()
+        {
+            if (currentHealth < 0f)
+            {
+                Destroy(this);
+            }
+        }
     }
 }
