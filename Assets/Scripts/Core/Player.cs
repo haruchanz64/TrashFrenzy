@@ -9,8 +9,8 @@ namespace TrashFrenzy.Core
     public class Player : MonoBehaviour
     {
         [Header("Movement")]
-        [SerializeField] private float movementSpeed = 12f;
-        [SerializeField] private float dashForce = 24f;
+        [SerializeField] private float movementSpeed = 24f;
+        [SerializeField] private float dashForce = 48f;
         [SerializeField] private float dashDuration = 0.2f;
         [SerializeField] private float dashCooldown = 1f;
 
@@ -21,8 +21,15 @@ namespace TrashFrenzy.Core
         private bool isDashing;
         private float lastDashTime;
 
-        [Header("Trash Consuming Mechanic")]
-        [SerializeField] private int trashCounter;
+        [Header("Animation Parameters")]
+        [SerializeField] private Animator animator;
+        [SerializeField] private AnimationClip[] animationClips;
+
+        private void Awake()
+        {
+            animator = GetComponent<Animator>();
+            rigidbody2D = GetComponent<Rigidbody2D>();
+        }
 
         private void FixedUpdate()
         {
