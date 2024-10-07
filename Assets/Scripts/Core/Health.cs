@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TrashFrenzy.Mechanics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,9 +12,12 @@ namespace TrashFrenzy.Core
         [SerializeField] private float maxHealth = 100f;
         [SerializeField] private float currentHealth;
 
-        [Header("UI")]
+        [Header("Health - UI")]
         [SerializeField] private Image healthBarImage;
         [SerializeField] private Gradient gradient;
+
+        [Header("Chances")]
+        [SerializeField] private int maxChances = 5;
 
         private void Awake()
         {
@@ -31,8 +35,6 @@ namespace TrashFrenzy.Core
         {
             currentHealth -= damage;
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-
-            CheckIfDead();
         }
 
         public void Heal(float healAmount)
@@ -41,12 +43,6 @@ namespace TrashFrenzy.Core
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         }
 
-        private void CheckIfDead()
-        {
-            if (currentHealth <= 0)
-            {
-                Debug.Log("Player is dead...");
-            }
-        }
+        
     }
 }
