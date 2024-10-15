@@ -23,7 +23,8 @@ namespace TrashFrenzy.Core
 
         [Header("Animation Parameters")]
         [SerializeField] private Animator animator;
-        [SerializeField] private AnimationClip[] animationClips;
+
+
 
         private void Awake()
         {
