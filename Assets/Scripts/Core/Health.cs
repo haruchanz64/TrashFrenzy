@@ -30,6 +30,7 @@ namespace TrashFrenzy.Core
 
         [Header("Health - UI")]
         [SerializeField] private Image healthBarImage;
+        [SerializeField] private Image healthIcon;
         [SerializeField] private Gradient gradient;
 
         [Header("Chances")]
@@ -45,6 +46,7 @@ namespace TrashFrenzy.Core
             healthBarImage.fillAmount = currentHealth / maxHealth;
 
             healthBarImage.color = gradient.Evaluate(healthBarImage.fillAmount);
+            healthIcon.color = gradient.Evaluate(healthBarImage.fillAmount);
         }
 
         public void ApplyDamage(float damage)
