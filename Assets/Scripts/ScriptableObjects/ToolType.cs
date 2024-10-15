@@ -12,15 +12,15 @@ namespace TrashFrenzy.ScriptableObjects
         public ToolClass toolClass;
         public Sprite toolSprite;
 
-        [Header("tool Object")]
-        public GameObject toolPrefab;
+        [Header("Tool Properties")]
+        public int baseEfficiency;
+        public int baseRange;
     }
 
     public enum ToolClass
     {
-        Organic,
-        Plastic,
-        Chemical
+        Biodegradable,
+        NonBiodegradable,
+        Recyclable
     }
-
 }
