@@ -10,6 +10,8 @@ namespace TrashFrenzy.Mechanics
     {
         [Header("Toxic Meter - UI")]
         [SerializeField] private Image toxicMeterFill;
+        [SerializeField] private Image toxicityMeterIcon;
+        [SerializeField] private Gradient gradient;
 
         [Header("Toxicity Meter - Parameters")]
         [SerializeField] private bool isToxicStatusEnabled = true;
@@ -27,6 +29,12 @@ namespace TrashFrenzy.Mechanics
         private void Start()
         {
             toxicityCoroutine = StartCoroutine(FillToxicityMeter());
+        }
+
+        private void Update()
+        {
+            toxicMeterFill.color = gradient.Evaluate(toxicMeterFill.fillAmount);
+            toxicityMeterIcon.color = gradient.Evaluate(toxicMeterFill.fillAmount);
         }
 
         private IEnumerator FillToxicityMeter()
