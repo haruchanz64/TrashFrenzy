@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 namespace TrashFrenzy.ScriptableObjects
 {
     [CreateAssetMenu(fileName = "New Trash", menuName = "Trash")]
@@ -10,15 +10,14 @@ namespace TrashFrenzy.ScriptableObjects
         [Header("Trash Info")]
         public string trashName;
         public TrashVariant trashVariant;
-
-        [Header("Trash Object")]
-        public GameObject trashPrefab;
+        public Sprite trashSprite;
+        public ToolClass requiredTool;
     }
 
     public enum TrashVariant
     {
-        Organic, 
-        Plastic, 
-        Chemical
+        Biodegradable,
+        Non_Biodegradable,
+        Recyclable
     }
 }
