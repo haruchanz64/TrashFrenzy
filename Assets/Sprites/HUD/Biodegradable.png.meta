@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 1662c1b00942fb44a9986abc272ba785
+guid: 3fb6deecf35044e498d332c9a294905e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3807722896295604221
-    second: Game Title_0
+      213: -4844599380827087046
+    second: Biodegradable_0
+  - first:
+      213: -7684824958719282627
+    second: Biodegradable_1
+  - first:
+      213: -1958640687544608474
+    second: Biodegradable_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Game Title_0
+      name: Biodegradable_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 330
-        width: 1005
-        height: 456
+        x: 286
+        y: 506
+        width: 408
+        height: 386
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +133,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 300dd233330482bc0800000000000000
-      internalID: -3807722896295604221
+      spriteID: a3f59bae78684ccb0800000000000000
+      internalID: -4844599380827087046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Biodegradable_1
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 208
+        width: 289
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d323b7e7a640a5590800000000000000
+      internalID: -7684824958719282627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Biodegradable_2
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 191
+        width: 471
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629d6480ca281d4e0800000000000000
+      internalID: -1958640687544608474
       vertices: []
       indices: 
       edges: []
@@ -144,7 +192,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Game Title_0: -3807722896295604221
+      Biodegradable_0: -4844599380827087046
+      Biodegradable_1: -7684824958719282627
+      Biodegradable_2: -1958640687544608474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

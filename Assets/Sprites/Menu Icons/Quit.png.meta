@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 1662c1b00942fb44a9986abc272ba785
+guid: 125b9ca216ba51349b1bddede3e7889f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3807722896295604221
-    second: Game Title_0
+      213: -121550713077426955
+    second: Quit_0
+  - first:
+      213: 223920669891790421
+    second: Quit_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Game Title_0
+      name: Quit_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 330
-        width: 1005
-        height: 456
+        x: 128
+        y: 118
+        width: 824
+        height: 783
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +130,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 300dd233330482bc0800000000000000
-      internalID: -3807722896295604221
+      spriteID: 5f413dc354a205ef0800000000000000
+      internalID: -121550713077426955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quit_1
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 653
+        width: 166
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55684c2b9a68b1300800000000000000
+      internalID: 223920669891790421
       vertices: []
       indices: 
       edges: []
@@ -144,7 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Game Title_0: -3807722896295604221
+      Quit_0: -121550713077426955
+      Quit_1: 223920669891790421
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

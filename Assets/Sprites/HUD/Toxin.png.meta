@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1662c1b00942fb44a9986abc272ba785
+guid: ce1f35d5ac131824e9110e0e4f54e329
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3807722896295604221
-    second: Game Title_0
+      213: 851968211408565098
+    second: Toxin_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Game Title_0
+      name: Toxin_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 330
-        width: 1005
-        height: 456
+        x: 167
+        y: 180
+        width: 747
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 300dd233330482bc0800000000000000
-      internalID: -3807722896295604221
+      spriteID: a63bee8039cc2db00800000000000000
+      internalID: 851968211408565098
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Game Title_0: -3807722896295604221
+      Toxin_0: 851968211408565098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

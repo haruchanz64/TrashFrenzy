@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: c148c7f1c4b2fc24997ee66d6bb93303
+guid: a8c9f3fcbc580744a82ac51290029b8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5146418473327409065
-    second: trashFrenzyLogo_0
+      213: -6376238426656209156
+    second: Recyclable_0
   - first:
-      213: 485653608434458677
-    second: trashFrenzyLogo_1
+      213: 5859653824277819590
+    second: Recyclable_1
   - first:
-      213: -3621904127731938040
-    second: trashFrenzyLogo_2
+      213: 4202485587324575290
+    second: Recyclable_2
   - first:
-      213: -1024253615586860596
-    second: trashFrenzyLogo_3
+      213: 5325813497061673988
+    second: Recyclable_3
   - first:
-      213: -3787693800225691582
-    second: trashFrenzyLogo_4
+      213: 8629342731145611472
+    second: Recyclable_4
+  - first:
+      213: -5414569366634981636
+    second: Recyclable_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trashFrenzyLogo_0
+      name: Recyclable_0
       rect:
         serializedVersion: 2
-        x: 101
-        y: 660
-        width: 150
-        height: 230
+        x: 94
+        y: 394
+        width: 311
+        height: 285
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a73038a550cb6740800000000000000
-      internalID: 5146418473327409065
+      spriteID: cf606f70fec0387a0800000000000000
+      internalID: -6376238426656209156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trashFrenzyLogo_1
+      name: Recyclable_1
       rect:
         serializedVersion: 2
-        x: 228
-        y: 266
-        width: 662
-        height: 546
+        x: 238
+        y: 655
+        width: 395
+        height: 315
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5306f9e32636db600800000000000000
-      internalID: 485653608434458677
+      spriteID: 6c0b6de7b1ca15150800000000000000
+      internalID: 5859653824277819590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trashFrenzyLogo_2
+      name: Recyclable_2
       rect:
         serializedVersion: 2
-        x: 612
-        y: 629
-        width: 230
-        height: 255
+        x: 542
+        y: 654
+        width: 315
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80d4400b2696cbdc0800000000000000
-      internalID: -3621904127731938040
+      spriteID: a3e1e2e306a325a30800000000000000
+      internalID: 4202485587324575290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trashFrenzyLogo_3
+      name: Recyclable_3
       rect:
         serializedVersion: 2
-        x: 152
-        y: 188
-        width: 216
-        height: 269
+        x: 690
+        y: 233
+        width: 296
+        height: 446
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc1290b63ce19c1f0800000000000000
-      internalID: -1024253615586860596
+      spriteID: 40c8750882719e940800000000000000
+      internalID: 5325813497061673988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trashFrenzyLogo_4
+      name: Recyclable_4
       rect:
         serializedVersion: 2
-        x: 659
-        y: 126
-        width: 182
-        height: 205
+        x: 108
+        y: 166
+        width: 378
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +226,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24829978e886f6bc0800000000000000
-      internalID: -3787693800225691582
+      spriteID: 0d888076e7591c770800000000000000
+      internalID: 8629342731145611472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recyclable_5
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 110
+        width: 328
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6920249d59bd4b0800000000000000
+      internalID: -5414569366634981636
       vertices: []
       indices: 
       edges: []
@@ -240,11 +264,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      trashFrenzyLogo_0: 5146418473327409065
-      trashFrenzyLogo_1: 485653608434458677
-      trashFrenzyLogo_2: -3621904127731938040
-      trashFrenzyLogo_3: -1024253615586860596
-      trashFrenzyLogo_4: -3787693800225691582
+      Recyclable_0: -6376238426656209156
+      Recyclable_1: 5859653824277819590
+      Recyclable_2: 4202485587324575290
+      Recyclable_3: 5325813497061673988
+      Recyclable_4: 8629342731145611472
+      Recyclable_5: -5414569366634981636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

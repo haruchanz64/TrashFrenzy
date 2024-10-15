@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 1662c1b00942fb44a9986abc272ba785
+guid: 289d88b1da3adfd47837d93841b20290
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3807722896295604221
-    second: Game Title_0
+      213: 3827136672426700466
+    second: Reward_0
+  - first:
+      213: -2970106747410147860
+    second: Reward_1
+  - first:
+      213: 6296350222299792503
+    second: Reward_2
+  - first:
+      213: 7562677769168342683
+    second: Reward_3
+  - first:
+      213: 6690948361236471191
+    second: Reward_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Game Title_0
+      name: Reward_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 330
-        width: 1005
-        height: 456
+        x: 390
+        y: 714
+        width: 300
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +139,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 300dd233330482bc0800000000000000
-      internalID: -3807722896295604221
+      spriteID: 2be2ddac688bc1530800000000000000
+      internalID: 3827136672426700466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 581
+        width: 214
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce590a746af08c6d0800000000000000
+      internalID: -2970106747410147860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_2
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 581
+        width: 214
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77481adea21216750800000000000000
+      internalID: 6296350222299792503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_3
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 282
+        width: 193
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ec50ebc5704f860800000000000000
+      internalID: 7562677769168342683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reward_4
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 282
+        width: 193
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d5bf995160bdc50800000000000000
+      internalID: 6690948361236471191
       vertices: []
       indices: 
       edges: []
@@ -144,7 +240,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Game Title_0: -3807722896295604221
+      Reward_0: 3827136672426700466
+      Reward_1: -2970106747410147860
+      Reward_2: 6296350222299792503
+      Reward_3: 7562677769168342683
+      Reward_4: 6690948361236471191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
