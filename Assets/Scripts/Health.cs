@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TrashFrenzy.Mechanics;
+using TrashFrenzy.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,9 @@ namespace TrashFrenzy.Core
     public class Health : MonoBehaviour
     {
         [Header("Health Statistics")]
-        [SerializeField] private float maxHealth = 100f;
+        [SerializeField] private PlayerStats playerStats;
+
+        [SerializeField] private float maxHealth;
         [SerializeField] private float currentHealth;
 
         public float CurrentHealth
