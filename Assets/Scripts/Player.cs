@@ -43,7 +43,7 @@ namespace TrashFrenzy.Core
         private void MoveCharacter()
         {
             Vector2 moveVelocity = movement.normalized * movementSpeed;
-            rigidbody2D.velocity = new Vector2(moveVelocity.x, moveVelocity.y);
+            rigidbody2D.linearVelocity = new Vector2(moveVelocity.x, moveVelocity.y);
         }
 
         private void MovePlayer(InputAction.CallbackContext context)
@@ -69,8 +69,8 @@ namespace TrashFrenzy.Core
             isDashing = true;
             lastDashTime = Time.time;
 
-            Vector2 dashDirection = rigidbody2D.velocity.normalized;
-            rigidbody2D.velocity = dashDirection * dashForce;
+            Vector2 dashDirection = rigidbody2D.linearVelocity.normalized;
+            rigidbody2D.linearVelocity = dashDirection * dashForce;
 
             yield return new WaitForSeconds(dashDuration);
 

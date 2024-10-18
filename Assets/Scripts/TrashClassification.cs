@@ -20,7 +20,7 @@ namespace TrashFrenzy.Core
 
             float horizontalVelocity = Random.Range(-movementSpeed, movementSpeed);
 
-            rb.velocity = new Vector2(horizontalVelocity, -movementSpeed);
+            rb.linearVelocity = new Vector2(horizontalVelocity, -movementSpeed);
         }
 
         public TrashType GetTrashType()
