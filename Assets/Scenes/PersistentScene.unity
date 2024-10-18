@@ -1507,7 +1507,7 @@ GameObject:
   - component: {fileID: 931276106}
   - component: {fileID: 931276105}
   m_Layer: 0
-  m_Name: Trash C
+  m_Name: Recyclable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2241,7 +2241,7 @@ GameObject:
   - component: {fileID: 1442509323}
   - component: {fileID: 1442509322}
   m_Layer: 0
-  m_Name: Trash A
+  m_Name: Biodegradable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3288,7 +3288,7 @@ GameObject:
   - component: {fileID: 2017613011}
   - component: {fileID: 2017613010}
   m_Layer: 0
-  m_Name: Trash B
+  m_Name: Non Biodegradable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3417,10 +3417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78727eaba8933c4991ebbea9095f73c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolType:
-  - {fileID: 11400000, guid: 1114cb139fd790744861457fddf85c58, type: 2}
-  - {fileID: 11400000, guid: 3b73f5b32c2a8cf4fa97720a3c1303f9, type: 2}
-  - {fileID: 11400000, guid: df678ecdc7d08ad4d99248049031bc0b, type: 2}
+  toolType: []
   trashProgression: {fileID: 131954493}
   trashVariantsIcon:
   - {fileID: 1442509322}
@@ -3536,6 +3533,7 @@ GameObject:
   - component: {fileID: 3178513166703661828}
   - component: {fileID: 2794666724212510703}
   - component: {fileID: 8838777172477328256}
+  - component: {fileID: 8838777172477328257}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3625,6 +3623,19 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   maxChances: 5
+--- !u!114 &8838777172477328257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6305205610663744160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2375baad96f3744ac54ec2f86a3d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: 3e6d594fb7bd41247b3b676943ba7e96, type: 2}
 --- !u!4 &9066585861079170442
 Transform:
   m_ObjectHideFlags: 0
